@@ -41,6 +41,4 @@ public class Shipment {
     private User assignedTransporter;
 
 
-
-
 }
