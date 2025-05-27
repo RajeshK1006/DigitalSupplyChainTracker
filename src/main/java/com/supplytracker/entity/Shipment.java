@@ -6,8 +6,9 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
-
+import lombok.Data;
 @Entity
+@Data
 @Table(name="shipments")
 @AllArgsConstructor
 @NoArgsConstructor
