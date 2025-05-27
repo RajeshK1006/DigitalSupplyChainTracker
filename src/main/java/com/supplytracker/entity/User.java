@@ -2,13 +2,13 @@ package com.supplytracker.entity;
 
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity
 @Table(name="users")
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 public class User {
 
 
@@ -29,7 +29,6 @@ public class User {
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private Role role;
-
 
 
 }

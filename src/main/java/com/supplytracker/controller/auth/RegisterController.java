@@ -26,33 +26,7 @@ import jakarta.validation.Valid;
 @RestController
 @RequestMapping("api/auth")
 public class RegisterController {
-	
-	
-//	private final UserRepository userRepo;
-//	private final ModelMapper mapper;
-//	private final PasswordEncoder encoder;
-//
-//	@Autowired
-//	public RegisterController(UserRepository userRepo, ModelMapper mapper, PasswordEncoder encode) {
-//		this.userRepo = userRepo;
-//		this.mapper = mapper;
-//		this.encoder = encode;
-//	}
-//
-//
-//	@PostMapping("/register")
-//	public String HandleRegister(@Valid @RequestBody UserDto user) {
-//		User newuser = mapper.map(user, User.class);
-//		if(newuser!=null) {
-//			newuser.setPassword(encoder.encode(user.getPassword()));
-//			userRepo.save(newuser);
-//			return "User was Registered Sucessfully";
-//		}
-//		return "Failed to Register";
-//	}
-//
-//
-//
+
 //	@PostMapping("/login")
 //	public String HandleLogin(@Valid @RequestBody LoginDto user) {
 //		User ExistingUser = userRepo.findByEmail(user.getEmail());
