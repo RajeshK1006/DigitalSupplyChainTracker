@@ -4,10 +4,11 @@ package com.supplytracker.entity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-
+import lombok.Data;
 import java.time.LocalDateTime;
 
 @Entity
+@Data
 @Table(name="shipments")
 @AllArgsConstructor
 @NoArgsConstructor
