@@ -9,7 +9,6 @@ import java.util.List;
 
 public interface CheckpointLogRepository extends JpaRepository<CheckpointLog, Long> {
 	List<CheckpointLog> findByShipmentIdOrderByTimestampAsc(Long shipmentId);
-	
 }
 
 

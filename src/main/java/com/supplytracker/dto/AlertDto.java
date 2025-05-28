@@ -15,7 +15,7 @@ public class AlertDto {
 	
 	//Initialization of the objects of AlertDto
 	private Long id;
-	private AlertType type;
+	private String type;
 	private String message;
 	private boolean resolved;
 	private LocalDateTime createdOn;

@@ -14,7 +14,6 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class Alert {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -34,8 +33,6 @@ public class Alert {
 
     @Column(nullable = false)
     private boolean resolved;
-
-
 
 
 }

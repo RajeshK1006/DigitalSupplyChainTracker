@@ -6,10 +6,11 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.Data;
 import java.time.LocalDateTime;
-import lombok.Builder;
+
+
+
 @Entity
 @Data
-@Builder
 @Table(name="checkingpoint_logs")
 @AllArgsConstructor
 @NoArgsConstructor
