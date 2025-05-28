@@ -44,7 +44,12 @@ public class UserService implements UserServiceInterface {
     @Override
     public UserResponseDto createUser(UserDto user) {
         User newuser = mapper.map(user, User.class);
-
+        try{
+            newuser.setRole(Role.valueOf(user.getRole().toUpperCase()));
+        }
+        catch (IllegalArgumentException ex){
+            throw new InvalidRoleException("Invalid Role Exception: "+ user.getRole());
+        }
 
            newuser.setPassword(encoder.encode(user.getPassword()));
            repo.save(newuser);
@@ -91,10 +96,6 @@ public class UserService implements UserServiceInterface {
         if(user==null){
             return "Login DTo mapping is null";
         }
-     /*   if (user.getEmail().length()==0) {
-            System.out.println(user.getEmail());
-            return "Email should not be null";
-        }*/
         if (!user.getEmail().matches("^[\\w-.]+@[\\w-]+\\.[a-z]{2,}$")) {
             return "Email should be a valid one";
         }
@@ -117,19 +118,5 @@ public class UserService implements UserServiceInterface {
         }
 
         return "Failed to login: Incorrect credentials";
-    }
-
-    public static interface UserServiceInterface {
-
-        List<User> getAllUsers();
-        User getUserById(Long id);
-        UserDto createUser(UserDto user);
-
-        UserDto UpdateUser(Long id, UserDto user);
-
-        String DeleteUser(Long id);
-
-        String LoginUser(LoginDto user);
-
     }
 }

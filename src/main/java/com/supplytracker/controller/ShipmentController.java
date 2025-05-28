@@ -1,7 +1,7 @@
 package com.supplytracker.controller;
 
 import com.supplytracker.dto.ShipmentDto;
-import com.supplytracker.service.ShipmentService;
+import com.supplytracker.service.interfaces.ItemServiceInterface;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -14,7 +14,7 @@ import java.util.List;
 public class ShipmentController {
 
 	@Autowired
-	private ShipmentService shipmentService;
+	private ItemServiceInterface.ShipmentService shipmentService;
 
 	@PostMapping
 	public ResponseEntity<ShipmentDto> createShipment(@Valid @RequestBody ShipmentDto shipmentDto){

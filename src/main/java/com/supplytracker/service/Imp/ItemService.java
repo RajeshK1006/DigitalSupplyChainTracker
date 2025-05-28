@@ -1,10 +1,9 @@
-package com.supplytracker.service;
+package com.supplytracker.service.Imp;
 
-import java.awt.font.FontRenderContext;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
+import com.supplytracker.service.interfaces.ItemServiceInterface;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,7 +17,7 @@ import com.supplytracker.repository.ItemRepository;
 import com.supplytracker.repository.UserRepository;
 
 @Service
-public class ItemServiceImpl implements ItemService{
+public class ItemService implements ItemServiceInterface {
 	
 	@Autowired
 	ItemRepository itemrepo;
@@ -32,7 +31,9 @@ public class ItemServiceImpl implements ItemService{
 	@Override
 	public ItemDto addItems(ItemDto dto) {
 		User supplier = userrepo.findById(dto.getSupplierId()).orElseThrow(() -> new ResourceNotFoundException("Supplier", "Id", dto.getSupplierId()));
+
 		Item item = mapper.map(dto, Item.class);
+		item.setSupplier(supplier);
 		itemrepo.save(item);
 		
 		return mapper.map(item, ItemDto.class);
@@ -66,7 +67,7 @@ public class ItemServiceImpl implements ItemService{
 		User supplier = userrepo.findById(dto.getSupplierId()).orElseThrow(() -> new ResourceNotFoundException("Supplier", "id", dto.getSupplierId()));
 		item.setName(dto.getName());
 		item.setCategory(dto.getCategory());
-//		item.setSupplierId(dto.getSupplierId());
+		item.setSupplier(supplier); // foreign key updation
 		item.setDatetime(dto.getDatetime());
 		Item updated = itemrepo.save(item);
 		return mapper.map(updated, ItemDto.class);

@@ -43,10 +43,6 @@ public class Shipment {
     private User assignedTransporter;
 
 
-	public void setToLocation(String toLocation2) {
-		// TODO Auto-generated method stub
-		
-	}
 
 
 }
