@@ -14,9 +14,9 @@ import jakarta.validation.constraints.PastOrPresent;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 
-@Data //creates get, set methods
-@NoArgsConstructor //creates a default constructor
-@AllArgsConstructor //creates a parameterized constructor
+@Data 
+@NoArgsConstructor 
+@AllArgsConstructor 
 public class ItemDto {
 
 	private Long id;

@@ -38,7 +38,6 @@
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
 
-<<<<<<< HEAD
 		<!-- Lombok (No version needed here) -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -46,7 +45,7 @@
 			<version>1.18.30</version>
 			<scope>provided</scope>
 		</dependency>
-=======
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -57,8 +56,6 @@
     <artifactId>modelmapper</artifactId>
     <version>3.2.2</version>
 </dependency>
->>>>>>> aaa13326ec66bdd3eb033175bfd527dc7700d63c
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>

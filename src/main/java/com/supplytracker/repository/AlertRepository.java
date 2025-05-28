@@ -16,7 +16,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface AlertRepository extends JpaRepository<Alert, Long> {
 
-	boolean existsByShipmentAndType(Shipment shipment, String type);
+	boolean existsByShipmentAndType(Shipment shipment, Alert type);
 
 	boolean existsByShipmentAndType(Shipment shipment, AlertType type);
 

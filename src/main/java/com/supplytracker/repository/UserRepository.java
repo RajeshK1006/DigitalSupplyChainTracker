@@ -10,5 +10,4 @@ import com.supplytracker.entity.User;
 public interface UserRepository  extends JpaRepository<User, Long>{
 
 	User findByEmailIgnoreCase(String email);
-
 }

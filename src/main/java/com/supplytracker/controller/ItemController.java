@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.supplytracker.dto.ItemDto;
+import com.supplytracker.entity.Item;
 import com.supplytracker.service.ItemService;
 
 import jakarta.validation.Valid;
@@ -25,33 +26,32 @@ public class ItemController {
 	@Autowired
 	private ItemService itemService;
 	
-	@PostMapping
-	public ResponseEntity<ItemDto> addItem(@Valid @RequestBody ItemDto itemDto){
+	@PostMapping("/")
+	public ItemDto addItem(@Valid @RequestBody ItemDto itemDto){
 		ItemDto createdItem = itemService.addItems(itemDto);
-		return ResponseEntity.ok(createdItem);
+		return createdItem;
 	}
 	
-	@GetMapping
-	public ResponseEntity<List<ItemDto>> getAllItems(){
-		List<ItemDto> items = itemService.getAllItems();
-		return ResponseEntity.ok(items);		
+	@GetMapping("/")
+	public List<ItemDto> getAllItems(){
+		return itemService.getAllItems();
+			
 	}
 	
 	@GetMapping("/{id}")
-	public ResponseEntity<ItemDto> getItemById(@PathVariable Long id){
-		ItemDto item = itemService.getById(id);
-		return ResponseEntity.ok(item);
+	public ItemDto getItemById(@PathVariable Long id){
+		return itemService.getById(id);
 	}
 	
 	@PutMapping("/{id}")
-	public ResponseEntity<ItemDto> updateItem(@PathVariable Long id, @Valid @RequestBody ItemDto itemDto){
+	public ItemDto updateItem(@PathVariable Long id, @Valid @RequestBody ItemDto itemDto){
 		ItemDto updated = itemService.updateItem(id, itemDto);
-		return ResponseEntity.ok(updated);
+		return updated;
 	}
 	
 	@DeleteMapping("/{id}")
-	public ResponseEntity<String> deleteItem(@PathVariable Long id){
+	public String deleteItem(@PathVariable Long id){
 		itemService.deleteItem(id);
-		return ResponseEntity.ok("Item deleted successfully");
+		return "Item deleted successfully";
 	}
 }
