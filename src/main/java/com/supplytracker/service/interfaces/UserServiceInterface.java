@@ -1,19 +1,20 @@
-package com.supplytracker.service.Imp;
+package com.supplytracker.service.interfaces;
+
 
 import com.supplytracker.dto.LoginDto;
 import com.supplytracker.dto.UserDto;
+import com.supplytracker.dto.UserResponseDto;
 import com.supplytracker.entity.User;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface UserServiceInterface {
 
     List<User> getAllUsers();
     User getUserById(Long id);
-    UserDto createUser(UserDto user);
+    UserResponseDto createUser(UserDto user);
 
-    UserDto UpdateUser(Long id, UserDto user);
+    UserResponseDto UpdateUser(Long id, UserDto user);
 
     String DeleteUser(Long id);
 

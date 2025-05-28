@@ -2,9 +2,10 @@ package com.supplytracker.controller;
 
 
 import com.supplytracker.dto.UserDto;
+import com.supplytracker.dto.UserResponseDto;
 import com.supplytracker.entity.User;
 import com.supplytracker.exception.InvalidRoleException;
-import com.supplytracker.service.UserService;
+import com.supplytracker.service.Imp.UserService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -31,9 +32,9 @@ public class UserController {
     }
 
 
-    @PutMapping("/{id}/role={userRole}")
-    public UserDto UpdateUser(@PathVariable Long id, @PathVariable String UserRole, @Valid  @RequestBody UserDto user){
-        if(UserRole.toUpperCase().equals("ADMINI")){
+    @PutMapping("/{id}/role={UserRole}")
+    public UserResponseDto UpdateUser(@PathVariable Long id, @PathVariable String UserRole, @Valid  @RequestBody UserDto user){
+        if(UserRole.toUpperCase().equals("ADMIN")){
             return service.UpdateUser(id,user);
         }
         throw new InvalidRoleException("The user with the current role cannot access this endpoint");

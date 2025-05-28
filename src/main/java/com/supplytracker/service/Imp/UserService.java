@@ -1,13 +1,14 @@
-package com.supplytracker.service;
+package com.supplytracker.service.Imp;
 
 import com.supplytracker.dto.LoginDto;
 import com.supplytracker.dto.UserDto;
+import com.supplytracker.dto.UserResponseDto;
 import com.supplytracker.entity.Role;
 import com.supplytracker.entity.User;
 import com.supplytracker.exception.InvalidRoleException;
 import com.supplytracker.exception.UserNotFoundException;
 import com.supplytracker.repository.UserRepository;
-import com.supplytracker.service.Imp.UserServiceInterface;
+import com.supplytracker.service.interfaces.UserServiceInterface;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -15,7 +16,6 @@ import org.springframework.stereotype.Service;
 
 
 import java.util.List;
-import java.util.Optional;
 
 
 @Service
@@ -42,18 +42,18 @@ public class UserService implements UserServiceInterface {
 
 
     @Override
-    public UserDto createUser(UserDto user) {
+    public UserResponseDto createUser(UserDto user) {
         User newuser = mapper.map(user, User.class);
 
 
            newuser.setPassword(encoder.encode(user.getPassword()));
            repo.save(newuser);
-           return mapper.map(newuser, UserDto.class);
+           return mapper.map(newuser, UserResponseDto.class);
 
     }
 
     @Override
-    public UserDto UpdateUser(Long id, UserDto user) {
+    public UserResponseDto UpdateUser(Long id, UserDto user) {
         User existing = repo.findById(id).orElseThrow(()-> new UserNotFoundException("User with this id: "+id+" not found"));
         try{
             existing.setName(user.getName());
@@ -67,7 +67,7 @@ public class UserService implements UserServiceInterface {
         }
 
         repo.save(existing);
-        return mapper.map(existing, UserDto.class);
+        return mapper.map(existing, UserResponseDto.class);
     }
 
     @Override
@@ -119,4 +119,17 @@ public class UserService implements UserServiceInterface {
         return "Failed to login: Incorrect credentials";
     }
 
+    public static interface UserServiceInterface {
+
+        List<User> getAllUsers();
+        User getUserById(Long id);
+        UserDto createUser(UserDto user);
+
+        UserDto UpdateUser(Long id, UserDto user);
+
+        String DeleteUser(Long id);
+
+        String LoginUser(LoginDto user);
+
+    }
 }
