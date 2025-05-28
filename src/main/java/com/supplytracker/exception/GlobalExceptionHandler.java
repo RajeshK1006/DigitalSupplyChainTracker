@@ -35,4 +35,12 @@ public class GlobalExceptionHandler {
 		return new ResponseEntity<>(error,HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 
+	@ExceptionHandler(InvalidRoleException.class)
+	public ResponseEntity<ErrorResponse> handleInvalidRoleExceptions(Exception e){
+		ErrorResponse error = new ErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR.value(),
+				"Internal Server Error: "+ e.getMessage(), LocalDateTime.now());
+
+		return new ResponseEntity<>(error,HttpStatus.INTERNAL_SERVER_ERROR);
+	}
+
 }
