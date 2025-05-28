@@ -3,11 +3,13 @@ package com.supplytracker.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
 @Entity
+@Data
 @Table(name="shipments")
 @AllArgsConstructor
 @NoArgsConstructor
@@ -39,6 +41,12 @@ public class Shipment {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="assigned_transporter_id")
     private User assignedTransporter;
+
+
+	public void setToLocation(String toLocation2) {
+		// TODO Auto-generated method stub
+		
+	}
 
 
 }
