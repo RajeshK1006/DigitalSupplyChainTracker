@@ -52,7 +52,7 @@ public class RegisterController {
 
 
 	@PostMapping("/login")
-	public String HandleLogin(LoginDto user){
+	public String HandleLogin(@RequestBody LoginDto user){
 		return service.LoginUser(user);
 	}
 

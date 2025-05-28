@@ -87,17 +87,21 @@ public class UserService implements UserServiceInterface {
     public String LoginUser(LoginDto user) {
         System.out.println(user.getEmail());
         System.out.println(user.getPassword());
-        if (user.getEmail().length()==0) {
+
+        if(user==null){
+            return "Login DTo mapping is null";
+        }
+     /*   if (user.getEmail().length()==0) {
             System.out.println(user.getEmail());
             return "Email should not be null";
-        }
+        }*/
         if (!user.getEmail().matches("^[\\w-.]+@[\\w-]+\\.[a-z]{2,}$")) {
             return "Email should be a valid one";
         }
         if (user.getPassword() == null) {
             return "Password should not be null";
         }
-        if (user.getPassword().length() < 8) {
+        if (user.getPassword().length() < 6) {
             return "Password must be at least 8 characters";
         }
 
