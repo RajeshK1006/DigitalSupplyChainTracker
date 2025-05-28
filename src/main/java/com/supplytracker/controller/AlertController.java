@@ -30,5 +30,5 @@ public class AlertController {
 	public ResponseEntity<String> resolveAlert(@PathVariable Long id) {
 		alertService.resolveAlert(id);
 		return ResponseEntity.ok("Alert with ID " + id + " has been resolved.");
-	}
+	} 
 }

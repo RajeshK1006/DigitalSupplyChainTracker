@@ -1,4 +1,4 @@
-package com.supplytracker.serviceImpl;
+package com.supplytracker.service.serviceImpl;
 
 
 import com.supplytracker.dto.AlertDto;
