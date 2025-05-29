@@ -34,4 +34,6 @@ public class UserDto {
     @NotBlank(message = "Role is required")
     private String role;
 
+    public UserDto(String alice, String mail, String password123, String supplier) {
+    }
 }

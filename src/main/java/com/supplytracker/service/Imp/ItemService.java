@@ -16,8 +16,13 @@ import com.supplytracker.exception.ResourceNotFoundException;
 import com.supplytracker.repository.ItemRepository;
 import com.supplytracker.repository.UserRepository;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 @Service
 public class ItemService implements ItemServiceInterface {
+
+
 	
 	@Autowired
 	ItemRepository itemrepo;

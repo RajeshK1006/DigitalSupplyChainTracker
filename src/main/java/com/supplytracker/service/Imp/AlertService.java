@@ -84,7 +84,7 @@ public class AlertService implements AlertServiceInterface {
 
     @Override
     public void deleteAlert(Long id) {
-        Alert alert = alertrepo.findById(id).orElseThrow(()-> new AlertNotFoundException("Allert Not Found with this id"));
+        Alert alert = alertrepo.findById(id).orElseThrow(()-> new AlertNotFoundException("Alert Not Found with this id"));
         alertrepo.delete(alert);
         return;
     }
