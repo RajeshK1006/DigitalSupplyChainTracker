@@ -10,9 +10,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 
-/*
- * Checking if the alert already exists or not for that particular Shipment and Type
- */
+//Checking if the alert already exists or not for that particular Shipment and Type
 @Repository
 public interface AlertRepository extends JpaRepository<Alert, Long> {
 

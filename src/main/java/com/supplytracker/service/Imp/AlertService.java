@@ -12,23 +12,35 @@ import com.supplytracker.service.interfaces.AlertServiceInterface;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import lombok.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+
+// This service class contains the business logic for the Alert module
 @Service
+@Data
 public class AlertService implements AlertServiceInterface {
+	
+    // Logger for logging important actions and errors
+	private static final Logger logger = LoggerFactory.getLogger(AlertService.class);
+
 
     @Autowired
-    private AlertRepository alertrepo;
+	public AlertRepository alertrepo;
 
     @Autowired
-    private ShipmentRepository shiprepo;
+    public ShipmentRepository shiprepo;
 
     @Autowired
-    private ModelMapper mapper;
+    public ModelMapper mapper;
 
+    
+    // Fetch all alerts from the database and return as DTOs
     @Override
     public List<AlertDto> getAllAlerts() {
         List<Alert>  arr = alertrepo.findAll();
@@ -40,12 +52,16 @@ public class AlertService implements AlertServiceInterface {
         return res;
     }
 
+    
+    // Fetch a specific alert by ID
     @Override
     public AlertDto getAlertbyId(Long id) {
         Alert alert = alertrepo.findById(id).orElseThrow(()-> new AlertNotFoundException("The Alert with this id not found!!!"));
         return mapper.map(alert, AlertDto.class);
     }
 
+    
+    // Update an existing alert based on the provided DTO data
     @Override
     public AlertDto updateAlert(Long id, AlertDto dto) {
 
@@ -62,7 +78,7 @@ public class AlertService implements AlertServiceInterface {
             existing_Alert.setShipment(existing_shipment);
         }
         if(dto.getType()!=null){
-            existing_Alert.setType(AlertType.valueOf(dto.getType()));
+            existing_Alert.setType(dto.getType());
         }
         if(dto.getCreatedOn()!=null){
             existing_Alert.setCreatedOn(dto.getCreatedOn());
@@ -72,16 +88,26 @@ public class AlertService implements AlertServiceInterface {
         return mapper.map(updated, AlertDto.class);
     }
 
+    
+    // Create and save a new alert
     @Override
     public AlertDto createAlert(AlertDto dto) {
-        Shipment shipment = shiprepo.findById(dto.getShipmentId()).orElseThrow(()->new ShipmentNotFoundException("Shipment with this id is not Found"));
+    	logger.info("Creating alert for shipmentId: {}", dto.getShipmentId());
+        Shipment shipment = shiprepo.findById(dto.getShipmentId())
+        		.orElseThrow(()-> {
+        			logger.error("Shipment with ID {} not found", dto.getShipmentId());
+        			return new ShipmentNotFoundException("Shipment with this id is not Found");
+        		});
         Alert alert = mapper.map(dto, Alert.class);
         alert.setShipment(shipment);
         alertrepo.save(alert);
+        logger.info("Alert created with ID: {}", alert.getId());
         return mapper.map(alert, AlertDto.class);
 
     }
 
+    
+    // Delete an alert by ID
     @Override
     public void deleteAlert(Long id) {
         Alert alert = alertrepo.findById(id).orElseThrow(()-> new AlertNotFoundException("Allert Not Found with this id"));
