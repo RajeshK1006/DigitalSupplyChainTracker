@@ -10,7 +10,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.supplytracker.dto.CheckpointDto;
+import com.supplytracker.dto.CheckpointDTO;
 import com.supplytracker.entity.CheckpointLog;
 import com.supplytracker.entity.Shipment;
 import com.supplytracker.repository.CheckpointLogRepository;
@@ -32,7 +32,7 @@ public class CheckPointLogService {
 
 
 	
-	public CheckpointDto addCheckpoint(CheckpointDto dto) {
+	public CheckpointDTO addCheckpoint(CheckpointDTO dto) {
 
 		Shipment shipment = shiprepo.findById(dto.getShipmentId()).orElseThrow(()-> new ShipmentNotFoundException("The Shipment with this id is not Found"));
 		CheckpointLog chpnt = mapper.map(dto,CheckpointLog.class);
@@ -45,19 +45,19 @@ public class CheckPointLogService {
 
 		chpnt.setShipment(shipment);
 		checkrepo.save(chpnt);
-		return mapper.map(chpnt,CheckpointDto.class);
+		return mapper.map(chpnt,CheckpointDTO.class);
 
 
 	}
 	
 	
-	public List<CheckpointDto> getCheckpointByShipment(Long shipmentId) {
+	public List<CheckpointDTO> getCheckpointByShipment(Long shipmentId) {
 
 		Shipment shipment = shiprepo.findById(shipmentId).orElseThrow(() -> new ShipmentNotFoundException("The shipment is not with this id"));
 		List<CheckpointLog> ans = checkrepo.findByShipmentIdOrderByTimestampAsc(shipmentId);
-		List<CheckpointDto> result = new ArrayList<>();
+		List<CheckpointDTO> result = new ArrayList<>();
 		for (CheckpointLog ch : ans) {
-			result.add(mapper.map(ch, CheckpointDto.class));
+			result.add(mapper.map(ch, CheckpointDTO.class));
 		}
 
 		return result;

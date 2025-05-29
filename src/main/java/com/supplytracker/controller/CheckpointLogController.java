@@ -1,6 +1,6 @@
 package com.supplytracker.controller;
 
-import com.supplytracker.dto.CheckpointDto;
+import com.supplytracker.dto.CheckpointDTO;
 import com.supplytracker.service.Imp.CheckPointLogService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -22,15 +22,15 @@ public class CheckpointLogController {
 
 
 	@PostMapping
-	public ResponseEntity<CheckpointDto>addCheckpoint(@Valid @RequestBody CheckpointDto request){
-		CheckpointDto message = service.addCheckpoint(request);
+	public ResponseEntity<CheckpointDTO>addCheckpoint(@Valid @RequestBody CheckpointDTO request){
+		CheckpointDTO message = service.addCheckpoint(request);
 		return ResponseEntity.ok(message);
 	}
 	
 	@GetMapping("/shipment/{shipmentId}")
 
-	public ResponseEntity<List<CheckpointDto>> getLogForShipment(@PathVariable Long shipmentId){
-		List<CheckpointDto> logs = service.getCheckpointByShipment(shipmentId);
+	public ResponseEntity<List<CheckpointDTO>> getLogForShipment(@PathVariable Long shipmentId){
+		List<CheckpointDTO> logs = service.getCheckpointByShipment(shipmentId);
 		return ResponseEntity.ok(logs);
 	}
 }
