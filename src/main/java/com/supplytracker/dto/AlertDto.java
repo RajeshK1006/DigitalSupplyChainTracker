@@ -5,21 +5,24 @@ package com.supplytracker.dto;
  */
 import com.supplytracker.entity.AlertType;
 import java.time.LocalDateTime;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
+
+import lombok.*;
 
 
-@Getter
+@Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class AlertDto {
 	
 	//Initialization of the objects of AlertDto
 	private Long id;
 	private String type;
 	private String message;
+
 	private boolean resolved;
 	private LocalDateTime createdOn;
 	private Long shipmentId;
+
 
 	
 }
