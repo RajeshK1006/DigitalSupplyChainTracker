@@ -10,10 +10,12 @@ import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 @Data //creates get, set methods
 @NoArgsConstructor //creates a default constructor
 @AllArgsConstructor //creates a parameterized constructor
+
 public class ShipmentDto {
 
 	private Long id;

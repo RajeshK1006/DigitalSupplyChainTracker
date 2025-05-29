@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import com.supplytracker.dto.ShipmentAssignDto;
 import com.supplytracker.entity.Role;
 import com.supplytracker.entity.User;
 import com.supplytracker.exception.ItemNotFoundException;
@@ -69,7 +70,7 @@ public class ShippmentService implements ItemServiceInterface.ShipmentService {
         List<Shipment> ships  = shiprepo.findAll();
         List<ShipmentDto> res = new ArrayList<>();
         for(Shipment st: ships){
-            mapper.map(st, ShipmentDto.class);
+            res.add(mapper.map(st, ShipmentDto.class));
         }
 
         return res;
@@ -100,5 +101,9 @@ public class ShippmentService implements ItemServiceInterface.ShipmentService {
             throw new ShipmentNotFoundException("The shippment with the give id s Not found");
         }
     }
+
+
+
+
 
 }

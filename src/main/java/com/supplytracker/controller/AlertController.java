@@ -1,61 +1,66 @@
 package com.supplytracker.controller;
 
-
 import com.supplytracker.dto.AlertDto;
-import com.supplytracker.entity.Alert;
-import com.supplytracker.exception.AlertNotFoundException;
+import com.supplytracker.entity.User;
+import com.supplytracker.exception.InvalidRoleException;
+import com.supplytracker.exception.UserNotFoundException;
 import com.supplytracker.service.Imp.AlertService;
+import com.supplytracker.repository.UserRepository;
 import jakarta.validation.Valid;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/api/alerts")
+@RequiredArgsConstructor
+@Slf4j
 public class AlertController {
 
-    @Autowired
-    private AlertService service;
+    private final AlertService service;
+    private final UserRepository repo;
+
+    // Utility method to authorize ADMINs only
+    private void authorizeAdmin(String email) {
+        log.info("Authorizing admin with email: {}", email);
+        User user = repo.findByEmail(email)
+                .orElseThrow(() -> new UserNotFoundException("User with this email is not found"));
+        if (!"ADMIN".equalsIgnoreCase(user.getRole().toString())) {
+            log.warn("Access denied for user role: {}", user.getRole());
+            throw new InvalidRoleException("Only ADMINs are authorized to perform this action");
+        }
+        log.info("Authorization successful for ADMIN: {}", email);
+    }
 
     @GetMapping
-    public List<AlertDto> getAllAlerts(){
+    public List<AlertDto> getAllAlerts() {
         return service.getAllAlerts();
     }
 
     @GetMapping("/{id}")
-    public AlertDto getAlertById(@PathVariable Long id){
+    public AlertDto getAlertById(@PathVariable Long id) {
         return service.getAlertbyId(id);
     }
 
     @PostMapping
-    public AlertDto createAlert(@Valid @RequestBody AlertDto dto){
+    public AlertDto createAlert(@Valid @RequestBody AlertDto dto,
+                                @RequestParam String email) {
+        authorizeAdmin(email);
         return service.createAlert(dto);
     }
 
     @PutMapping("/{id}/resolve")
-    public AlertDto updateAlert(@Valid @PathVariable Long id, @RequestBody AlertDto dto){
-        return service.updateAlert(id,dto);
+    public AlertDto updateAlert(@Valid @PathVariable Long id,
+                                @RequestBody AlertDto dto,
+                                @RequestParam String email) {
+        authorizeAdmin(email);
+        return service.updateAlert(id, dto);
     }
 
     @DeleteMapping("/{id}")
-    public void deleteAlertById(@Valid @PathVariable Long id){
+    public void deleteAlertById(@Valid @PathVariable Long id) {
         service.deleteAlert(id);
-        return;
     }
-
-//
-//    public AlertDto updateAlert(Long id, AlertDto dto) {
-//        Alert existingAlert = alertrepo.findById(id)
-//                .orElseThrow(() -> new AlertNotFoundException("Alert with this id is not found"));
-//
-//        // Only update the 'resolved' status
-//        existingAlert.setResolved(dto.isResolved());
-//
-//        Alert updated = alertrepo.save(existingAlert);
-//        return mapper.map(updated, AlertDto.class);
-//    }
-
-
-
 }

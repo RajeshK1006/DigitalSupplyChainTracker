@@ -19,6 +19,7 @@ import org.slf4j.LoggerFactory;
 
 
 import java.util.List;
+import java.util.Optional;
 
 
 @Service
@@ -80,11 +81,11 @@ public class UserService implements UserServiceInterface {
             logger.error("User with ID {} not found for update", id);
             return new UserNotFoundException("User with this id: "+id+" not found");});
         try{
-            existing.setName(user.getName());
-            existing.setEmail(user.getEmail());
-            existing.setPassword(encoder.encode(user.getPassword()));
+            if(user.getName()!=null) existing.setName(user.getName());
+            if (user.getEmail()!=null)existing.setEmail(user.getEmail());
+            if(user.getPassword()!=null) existing.setPassword(encoder.encode(user.getPassword()));
 
-            existing.setRole(Role.valueOf(user.getRole().toUpperCase()));
+            if(user.getRole()!=null) existing.setRole(Role.valueOf(user.getRole().toUpperCase()));
         }
         catch(IllegalArgumentException ex){
             logger.error("Invalid role provided while updating: {}",user.getRole());
@@ -136,14 +137,14 @@ public class UserService implements UserServiceInterface {
         }
 
         String email = user.getEmail().trim();
-        User existingUser = repo.findByEmailIgnoreCase(email);
+        Optional<User> existingUser = repo.findByEmail(email);
 
-        if (existingUser == null) {
+        if (existingUser.isPresent()) {
             logger.warn("User not found with email: {}", email);
             return "User Not found";
         }
 
-        if (encoder.matches(user.getPassword(), existingUser.getPassword())) {
+        if (encoder.matches(user.getPassword(), existingUser.get().getPassword())) {
             logger.info("User logged in successfully: {}", email);
             return "Login Successful";
         }

@@ -1,6 +1,7 @@
 package com.supplytracker.service.interfaces;
 
 
+import com.supplytracker.dto.ShipmentAssignDto;
 import com.supplytracker.dto.ShipmentDto;
 
 import java.util.List;
@@ -16,4 +17,6 @@ public interface ShipmentServiceInterface {
     ShipmentDto updateShipment(Long id, ShipmentDto dto);
 
     void deleteShipment(Long id);
+
+
 }
