@@ -6,6 +6,5 @@ import com.supplytracker.entity.Shipment;
 
 public interface ShipmentRepository extends JpaRepository<Shipment, Long>{
 
-	Shipment find(Shipment shipment);
 	
 }

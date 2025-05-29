@@ -8,6 +8,5 @@ import com.supplytracker.entity.Item;
 
 public interface ItemRepository extends JpaRepository<Item, Long>{
 
-	Item find(Item item);
 
 }

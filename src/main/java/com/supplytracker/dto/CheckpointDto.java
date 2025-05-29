@@ -10,14 +10,14 @@ import java.time.LocalDateTime;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class CheckpointDTO{
+public class CheckpointDto{
 	@NotNull(message ="Shipment ID is required")
 	private Long shipmentId;
 	@NotNull(message ="Location is required")
 	@Size(min = 2, max=100, message ="Location must be between 2 and 100 characters")
 	private String location;
 	@NotNull(message ="Status is required")
-	private Status status;
+	private String status;
 	private LocalDateTime timestamp;
 	
 }
