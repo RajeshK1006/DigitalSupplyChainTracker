@@ -17,7 +17,6 @@ import com.supplytracker.repository.CheckpointLogRepository;
 import com.supplytracker.repository.ShipmentRepository;
 
 
-
 @Service
 public class CheckPointLogService {
 
@@ -29,7 +28,6 @@ public class CheckPointLogService {
 
 	@Autowired
 	private ModelMapper mapper;
-
 
 	
 	public CheckpointDto addCheckpoint(CheckpointDto dto) {
@@ -62,6 +60,18 @@ public class CheckPointLogService {
 
 		return result;
 
+	}
+
+
+	public List<CheckpointDto> getLogForShipment1(Long shipmentId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	public List<CheckpointDto> getLogForShipment(Long shipmentId) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
