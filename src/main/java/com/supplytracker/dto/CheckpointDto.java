@@ -19,5 +19,6 @@ public class CheckpointDto{
 	@NotNull(message ="Status is required")
 	private String status;
 	private LocalDateTime timestamp;
-	
+
+
 }

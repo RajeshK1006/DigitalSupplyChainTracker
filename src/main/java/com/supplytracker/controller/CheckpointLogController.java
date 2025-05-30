@@ -29,36 +29,41 @@ public class CheckpointLogController {
 	@Autowired
 	private final UserRepository repo;
 
+	// Allows only MANAGER or TRANSPORTER to proceed
 	private void authorizeManagerOrTransporter(String email) {
-		logger.info("Authorizing user with email: {}", email);
+		logger.info("Authorizing user role check");
+
 		User user = repo.findByEmail(email)
 				.orElseThrow(() -> {
-					logger.error("User not found with email: {}", email);
+					logger.error("User not found during authorization");
 					return new UserNotFoundException("User with this email is not found");
 				});
 
 		if (!("MANAGER".equalsIgnoreCase(String.valueOf(user.getRole()))
 				|| "TRANSPORTER".equalsIgnoreCase(String.valueOf(user.getRole())))) {
-			logger.warn("Unauthorized access attempt by user with email: {}", email);
+			logger.warn("User is not authorized to access this endpoint");
 			throw new InvalidRoleException("Only MANAGERs and TRANSPORTERs are authorized to perform this action");
 		}
-		logger.info("Authorization successful for user: {}", email);
+
+		logger.info("User is authorized for checkpoint operation");
 	}
 
+	// Adds a checkpoint log for a shipment
 	@PostMapping
 	public ResponseEntity<CheckpointDto> addCheckpoint(@Valid @RequestBody CheckpointDto request,
 													   @RequestParam String email) {
 		authorizeManagerOrTransporter(email);
-		logger.info("Adding checkpoint for shipment ID: {} by user: {}", request.getShipmentId(), email);
+		logger.info("Checkpoint addition request received");
 		CheckpointDto message = service.addCheckpoint(request);
 		return ResponseEntity.ok(message);
 	}
 
+	// Fetches all checkpoints for a given shipment
 	@GetMapping("/shipment/{shipmentId}")
 	public ResponseEntity<List<CheckpointDto>> getLogForShipment(@PathVariable Long shipmentId,
 																 @RequestParam String email) {
 		authorizeManagerOrTransporter(email);
-		logger.info("Fetching checkpoint logs for shipment ID: {} by user: {}", shipmentId, email);
+		logger.info("Fetching checkpoints for shipment");
 		List<CheckpointDto> logs = service.getCheckpointByShipment(shipmentId);
 		return ResponseEntity.ok(logs);
 	}

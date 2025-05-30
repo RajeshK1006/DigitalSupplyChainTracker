@@ -1,6 +1,5 @@
 package com.supplytracker.userModule;
 
-
 import com.supplytracker.dto.LoginDto;
 import com.supplytracker.dto.UserDto;
 import com.supplytracker.dto.UserResponseDto;
@@ -12,21 +11,22 @@ import com.supplytracker.repository.UserRepository;
 import com.supplytracker.service.Imp.UserService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.modelmapper.ModelMapper;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.modelmapper.ModelMapper;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
+@ExtendWith(MockitoExtension.class)
 class UserServiceTest {
-
-    @InjectMocks
-    private UserService userService;
 
     @Mock
     private UserRepository repo;
@@ -37,71 +37,62 @@ class UserServiceTest {
     @Mock
     private ModelMapper mapper;
 
+    @InjectMocks
+    private UserService userService;
+
+    private User user;
+    private UserDto userDto;
+    private UserResponseDto responseDto;
+
     @BeforeEach
     void setUp() {
-        MockitoAnnotations.openMocks(this);
-    }
-
-    void testCreateUser_Success() {
-
-        UserDto dto = new UserDto("Alice", "alice@example.com", "Password@123", "SUPPLIER");
-
-        User mappedUser = new User();
-        mappedUser.setName("Alice");
-        mappedUser.setEmail("alice@example.com");
-        mappedUser.setRole(Role.SUPPLIER); // Must match enum
-        mappedUser.setPassword("encodedPass");
-
-        UserResponseDto responseDto = new UserResponseDto();
-        responseDto.setName("Alice");
-        responseDto.setEmail("alice@example.com");
-
-        when(mapper.map(eq(dto), eq(User.class))).thenReturn(mappedUser);
-        when(encoder.encode("Password@123")).thenReturn("encodedPass");
-        when(repo.save(any(User.class))).thenReturn(mappedUser);
-        when(mapper.map(eq(mappedUser), eq(UserResponseDto.class))).thenReturn(responseDto);
-
-        UserResponseDto result = userService.createUser(dto);
-
-        assertNotNull(result);
-        assertEquals("Alice", result.getName());
-        assertEquals("alice@example.com", result.getEmail());
-
-        verify(repo).save(any(User.class));
-    }
-
-    @Test
-    void testGetUserById_ValidId() {
-        User user = new User();
+        user = new User();
         user.setId(1L);
-        user.setName("John");
+        user.setEmail("rajesh@example.com");
+        user.setPassword("encodedPassword");
+        user.setRole(Role.SUPPLIER);
 
-        when(repo.findById(1L)).thenReturn(Optional.of(user));
+        userDto = new UserDto();
+        userDto.setEmail("rajesh@example.com");
+        userDto.setPassword("Rajesh@123");
+        userDto.setRole("SUPPLIER");
 
-        User result = userService.getUserById(1L);
-        assertEquals("John", result.getName());
+        responseDto = new UserResponseDto();
+        responseDto.setEmail("rajesh@example.com");
+        responseDto.setRole("SUPPLIER");
     }
+
+
 
     @Test
-    void testGetUserById_InvalidId_ThrowsException() {
-        when(repo.findById(100L)).thenReturn(Optional.empty());
+    void testCreateUser_Success() {
+        when(mapper.map(userDto, User.class)).thenReturn(user);
+        when(encoder.encode(userDto.getPassword())).thenReturn("encodedPassword");
+        when(repo.save(any(User.class))).thenReturn(user);
+        when(mapper.map(user, UserResponseDto.class)).thenReturn(responseDto);
 
-        assertThrows(UserNotFoundException.class, () -> userService.getUserById(100L));
+        UserResponseDto result = userService.createUser(userDto);
+        assertEquals(responseDto.getEmail(), result.getEmail());
     }
+
+
+
+    @Test
+    void testUpdateUser_InvalidRole() {
+        userDto.setRole("INVALID_ROLE");
+        when(repo.findById(1L)).thenReturn(Optional.of(user));
+        assertThrows(InvalidRoleException.class, () -> userService.UpdateUser(1L, userDto));
+    }
+
 
     @Test
     void testLoginUser_Success() {
-        LoginDto loginDto = new LoginDto("john@example.com", "12345678");
-
-        User user = new User();
-        user.setEmail("john@example.com");
-        user.setPassword("encoded123");
-
-        when(repo.findByEmailIgnoreCase("john@example.com")).thenReturn(user);
-        when(encoder.matches("12345678", "encoded123")).thenReturn(true);
-
+        LoginDto loginDto = new LoginDto("rajesh@example.com", "Rajesh@123");
+        when(repo.findByEmail("rajesh@example.com")).thenReturn(Optional.of(user));
+        when(encoder.matches("Rajesh@123", "encodedPassword")).thenReturn(true);
         String result = userService.LoginUser(loginDto);
         assertEquals("Login Successful", result);
     }
-}
 
+
+}

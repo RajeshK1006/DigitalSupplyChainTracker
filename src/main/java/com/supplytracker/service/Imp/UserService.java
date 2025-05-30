@@ -139,7 +139,7 @@ public class UserService implements UserServiceInterface {
         String email = user.getEmail().trim();
         Optional<User> existingUser = repo.findByEmail(email);
 
-        if (existingUser.isPresent()) {
+        if (existingUser.isEmpty()) {
             logger.warn("User not found with email: {}", email);
             return "User Not found";
         }
