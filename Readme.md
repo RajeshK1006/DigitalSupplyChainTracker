@@ -3,6 +3,9 @@
 
 A Spring Boot–based backend application designed to **digitally monitor and manage the movement of items** across a supply chain — from suppliers to transporters to warehouses and retailers. It provides **real-time visibility**, **role-based access**, and **automated alerts** to ensure transparency and minimize delays.
 
+
+##  🌐 Domain
+- Logistics / Manufacturing / Retail
 ---
 
 ##  Objectives
@@ -171,3 +174,101 @@ com.supplytracker
 4. Build alerting system
 5. Develop reports and dashboards
 6. Final testing + Swagger documentation
+
+
+# ▶ How to Use the Project
+
+## 🛠 Prerequisites
+
+- **Java 17+**
+- **Maven** or **Gradle**
+- **MySQL** database
+- *(Optional)* Postman for API testing
+- *(Optional)* Swagger UI for API documentation
+
+---
+
+## 🚀 Steps to Run
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Rajeshk1006/digital-supply-chain-tracker.git
+cd digital-supply-chain-tracker
+````
+
+### 2. Set up the Database
+
+Create a MySQL database named `supply_tracker`.
+
+Update your `application.properties` file:
+
+```properties
+spring.datasource.url=jdbc:mysql://10.9.215.64:3306/springboot_team_db
+spring.datasource.username=team_user
+spring.datasource.password=localpass123
+```
+
+### 3. Build and Run the Application
+
+#### Using Maven:
+
+```bash
+./mvnw clean install
+./mvnw spring-boot:run
+```
+
+#### Or using Gradle:
+
+```bash
+./gradlew build
+./gradlew bootRun
+```
+
+---
+
+## 🔍 Access Swagger UI
+
+Visit:
+
+* [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+* or
+* [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
+
+---
+
+## 👤 Register Users and Use API
+
+* `POST /api/auth/register` — create users with different roles
+* `POST /api/auth/login` — receive a JWT token
+* Include the token in the `Authorization` header:
+
+
+
+---
+
+## 🧪 Explore API Endpoints
+
+* `/api/items`
+* `/api/shipments`
+* `/api/checkpoints`
+* `/api/alerts`
+* `/api/reports`
+
+---
+
+## 📌 Tips
+
+* Add initial users and test data using Swagger UI or `data.sql`
+* Customize roles, item categories, and shipment statuses
+* Monitor logs via the console or log file
+
+
+## Authors
+
+- Rajesh K
+- Charan V
+- SreeHari
+- Dheeraj
+- Naga Sindhu
+- Sri Krishna Aditya

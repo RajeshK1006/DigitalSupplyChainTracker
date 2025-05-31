@@ -20,5 +20,4 @@ public class CheckpointDto{
 	private String status;
 	private LocalDateTime timestamp;
 
-
 }
