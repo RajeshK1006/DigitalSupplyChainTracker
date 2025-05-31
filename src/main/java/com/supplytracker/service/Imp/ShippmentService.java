@@ -103,10 +103,25 @@ public class ShippmentService implements ItemServiceInterface.ShipmentService {
         Shipment existing_shipment = shiprepo.findById(id)
                 .orElseThrow(() -> new ShipmentNotFoundException("Shipment with this id is not found"));
 
-        existing_shipment.setToLocation(dto.getToLocation());
-        existing_shipment.setFromLocation(dto.getFromLocation());
-        existing_shipment.setExpectedDelivery(dto.getExpectedDelivery());
-        existing_shipment.setCurrentStatus(ShipmentStatus.valueOf(dto.getCurrentStatus()));
+//        existing_shipment.setToLocation(dto.getToLocation());
+//        existing_shipment.setFromLocation(dto.getFromLocation());
+//        existing_shipment.setExpectedDelivery(dto.getExpectedDelivery());
+//        existing_shipment.setCurrentStatus(ShipmentStatus.valueOf(dto.getCurrentStatus()));
+        if (dto.getToLocation() != null) {
+            existing_shipment.setToLocation(dto.getToLocation());
+        }
+
+        if (dto.getFromLocation() != null) {
+            existing_shipment.setFromLocation(dto.getFromLocation());
+        }
+
+        if (dto.getExpectedDelivery() != null) {
+            existing_shipment.setExpectedDelivery(dto.getExpectedDelivery());
+        }
+
+        if (dto.getCurrentStatus() != null) {
+            existing_shipment.setCurrentStatus(ShipmentStatus.valueOf(dto.getCurrentStatus()));
+        }
 
         if (dto.getAssignedTransporterId() != null) {
             User transporter = userrepo.findById(dto.getAssignedTransporterId())
