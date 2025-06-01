@@ -1,24 +1,150 @@
-2025-05-31T16:30:26.149+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Starting DigitalSupplyChainTrackerApplication using Java 23.0.1 with PID 34904 (C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker\target\classes started by Rajesh in C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker)
-2025-05-31T16:30:26.151+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : No active profile set, falling back to 1 default profile: "default"
-2025-05-31T16:30:26.200+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-05-31T16:30:26.200+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-05-31T16:30:26.900+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-31T16:30:26.965+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 5 JPA repository interfaces.
-2025-05-31T16:30:27.580+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-31T16:30:27.599+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-31T16:30:27.599+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-05-31T16:30:27.648+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-31T16:30:27.648+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1448 ms
-2025-05-31T16:30:27.880+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-31T16:30:27.939+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
-2025-05-31T16:30:27.980+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-31T16:30:28.264+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-31T16:30:28.291+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-31T16:30:28.545+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ce49ca8
-2025-05-31T16:30:28.546+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-31T16:30:28.581+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-31T16:30:28.583+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-05-31T16:30:28.596+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-06-01T03:18:04.089+05:30  INFO 27228 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Starting DigitalSupplyChainTrackerApplication using Java 23.0.1 with PID 27228 (C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker\target\classes started by Rajesh in C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker)
+2025-06-01T03:18:04.095+05:30  INFO 27228 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T03:18:04.143+05:30  INFO 27228 --- [DigitalSupplyChainTracker] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-01T03:18:04.143+05:30  INFO 27228 --- [DigitalSupplyChainTracker] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-01T03:18:04.901+05:30  INFO 27228 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-01T03:18:04.976+05:30  INFO 27228 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 5 JPA repository interfaces.
+2025-06-01T03:18:05.575+05:30  INFO 27228 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-01T03:18:05.590+05:30  INFO 27228 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-01T03:18:05.591+05:30  INFO 27228 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-01T03:18:05.637+05:30  INFO 27228 --- [DigitalSupplyChainTracker] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-01T03:18:05.638+05:30  INFO 27228 --- [DigitalSupplyChainTracker] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1495 ms
+2025-06-01T03:18:05.842+05:30  INFO 27228 --- [DigitalSupplyChainTracker] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-01T03:18:05.895+05:30  INFO 27228 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-01T03:18:05.935+05:30  INFO 27228 --- [DigitalSupplyChainTracker] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-01T03:18:06.217+05:30  INFO 27228 --- [DigitalSupplyChainTracker] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-01T03:18:06.242+05:30  INFO 27228 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-01T03:18:28.374+05:30  WARN 27228 --- [DigitalSupplyChainTracker] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08S01
+2025-06-01T03:18:28.374+05:30 ERROR 27228 --- [DigitalSupplyChainTracker] [restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2025-06-01T03:18:28.375+05:30  WARN 27228 --- [DigitalSupplyChainTracker] [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+org.hibernate.exception.JDBCConnectionException: unable to obtain isolated JDBC connection [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:336) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.5.0.jar:3.5.0]
+	at com.supplytracker.DigitalSupplyChainTrackerApplication.main(DigitalSupplyChainTrackerApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.0.jar:3.5.0]
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:139) ~[HikariCP-6.3.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:368) ~[HikariCP-6.3.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:205) ~[HikariCP-6.3.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:483) ~[HikariCP-6.3.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571) ~[HikariCP-6.3.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:101) ~[HikariCP-6.3.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-6.3.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:483) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
+	... 38 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:142) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:961) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	... 51 common frames omitted
+Caused by: java.net.ConnectException: Connection timed out: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:760) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53) ~[mysql-connector-j-9.2.0.jar:9.2.0]
+	... 54 common frames omitted
+
+2025-06-01T03:18:28.390+05:30  WARN 27228 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-01T03:18:28.391+05:30  WARN 27228 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-01T03:18:28.398+05:30  INFO 27228 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-01T03:18:29.039+05:30  INFO 27228 --- [DigitalSupplyChainTracker] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-01T03:18:29.054+05:30  INFO 27228 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-01T03:18:50.220+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Starting DigitalSupplyChainTrackerApplication using Java 23.0.1 with PID 38348 (C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker\target\classes started by Rajesh in C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker)
+2025-06-01T03:18:50.222+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T03:18:50.275+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-01T03:18:50.276+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-01T03:18:50.993+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-01T03:18:51.061+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 5 JPA repository interfaces.
+2025-06-01T03:18:51.669+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-01T03:18:51.687+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-01T03:18:51.687+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-01T03:18:51.738+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-01T03:18:51.738+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1462 ms
+2025-06-01T03:18:51.946+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-01T03:18:52.004+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-01T03:18:52.041+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-01T03:18:52.316+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-01T03:18:52.341+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-01T03:18:52.589+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35b7d85a
+2025-06-01T03:18:52.592+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-01T03:18:52.627+05:30  WARN 38348 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-01T03:18:52.628+05:30  WARN 38348 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-01T03:18:52.644+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0
@@ -26,750 +152,98 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-31T16:30:29.270+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-31T16:30:29.334+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:30:29.795+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-31T16:30:29.816+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+2025-06-01T03:18:53.328+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-01T03:18:53.393+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-01T03:18:53.877+05:30  WARN 38348 --- [DigitalSupplyChainTracker] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-01T03:18:53.899+05:30  WARN 38348 --- [DigitalSupplyChainTracker] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 258e23d9-5e58-416d-a239-fe6a1525a653
+Using generated security password: d678e65b-14d5-4463-b035-64b5afd0ab6e
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2025-05-31T16:30:29.823+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-05-31T16:30:30.347+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-05-31T16:30:30.375+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-31T16:30:30.382+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Started DigitalSupplyChainTrackerApplication in 4.623 seconds (process running for 5.02)
-2025-05-31T16:30:52.686+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-31T16:30:52.686+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-31T16:30:52.687+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-05-31T16:30:52.826+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-3] c.s.controller.ItemController            : Request received to add item
-2025-05-31T16:30:52.828+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-3] c.s.controller.ItemController            : Authorizing user with given email
-2025-05-31T16:30:52.917+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-3] c.s.controller.ItemController            : Authorization successful
-2025-05-31T16:30:52.917+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-3] c.supplytracker.service.Imp.ItemService  : Adding new item: Industrial Screw
-2025-05-31T16:30:52.983+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-3] c.supplytracker.service.Imp.ItemService  : Item added with ID: 8
-2025-05-31T16:30:52.985+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-3] c.s.controller.ItemController            : Item successfully added
-2025-05-31T16:31:32.137+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2025-05-31T16:31:32.140+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-31T16:31:32.145+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-31T16:31:32.148+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:31:32.152+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-31T16:31:32.157+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-31T16:31:32.255+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Starting DigitalSupplyChainTrackerApplication using Java 23.0.1 with PID 34904 (C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker\target\classes started by Rajesh in C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker)
-2025-05-31T16:31:32.255+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : No active profile set, falling back to 1 default profile: "default"
-2025-05-31T16:31:32.554+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-31T16:31:32.585+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 5 JPA repository interfaces.
-2025-05-31T16:31:32.692+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-31T16:31:32.693+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-31T16:31:32.693+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-05-31T16:31:32.722+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-31T16:31:32.723+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 466 ms
-2025-05-31T16:31:32.755+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-31T16:31:32.758+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-31T16:31:32.766+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-31T16:31:32.767+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2025-05-31T16:31:32.781+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1442a1d3
-2025-05-31T16:31:32.782+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2025-05-31T16:31:32.783+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-31T16:31:32.783+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-05-31T16:31:32.783+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+2025-06-01T03:18:53.905+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-06-01T03:18:54.401+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-01T03:18:54.428+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-01T03:18:54.435+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Started DigitalSupplyChainTrackerApplication in 4.637 seconds (process running for 5.043)
+2025-06-01T03:18:59.765+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-01T03:18:59.765+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-01T03:18:59.766+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-01T03:19:00.285+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 320 ms
+2025-06-01T03:19:34.017+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-01T03:19:34.021+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-01T03:19:34.025+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-01T03:19:34.027+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-01T03:19:34.032+05:30  INFO 38348 --- [DigitalSupplyChainTracker] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-01T19:45:43.285+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Starting DigitalSupplyChainTrackerApplication using Java 23.0.1 with PID 20308 (C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker\target\classes started by Rajesh in C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker)
+2025-06-01T19:45:43.287+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-01T19:45:43.335+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-01T19:45:43.336+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-01T19:45:44.221+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-01T19:45:44.302+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 5 JPA repository interfaces.
+2025-06-01T19:45:44.959+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-01T19:45:44.975+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-01T19:45:44.976+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-06-01T19:45:45.026+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-01T19:45:45.026+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1690 ms
+2025-06-01T19:45:45.277+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-01T19:45:45.362+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-06-01T19:45:45.415+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-01T19:45:45.721+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-01T19:45:45.751+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-01T19:45:46.092+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@51d2b282
+2025-06-01T19:45:46.094+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-01T19:45:46.138+05:30  WARN 20308 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-01T19:45:46.139+05:30  WARN 20308 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-06-01T19:45:46.156+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0
 	Autocommit mode: undefined/unknown
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-31T16:31:32.900+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-31T16:31:32.936+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:31:33.093+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-31T16:31:33.100+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+2025-06-01T19:45:46.972+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-01T19:45:47.048+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-01T19:45:47.594+05:30  WARN 20308 --- [DigitalSupplyChainTracker] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-01T19:45:47.624+05:30  WARN 20308 --- [DigitalSupplyChainTracker] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 3f1fc0ec-5466-4ba5-909e-0b9c81e8b2e6
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-05-31T16:31:33.100+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-05-31T16:31:33.242+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-05-31T16:31:33.250+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-31T16:31:33.255+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Started DigitalSupplyChainTrackerApplication in 1.032 seconds (process running for 67.893)
-2025-05-31T16:31:33.258+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-05-31T16:31:48.005+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-05-31T16:31:48.007+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-31T16:31:48.011+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-31T16:31:48.013+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:31:48.013+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2025-05-31T16:31:48.016+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-2025-05-31T16:31:48.102+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Starting DigitalSupplyChainTrackerApplication using Java 23.0.1 with PID 34904 (C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker\target\classes started by Rajesh in C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker)
-2025-05-31T16:31:48.102+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : No active profile set, falling back to 1 default profile: "default"
-2025-05-31T16:31:48.288+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-31T16:31:48.313+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 5 JPA repository interfaces.
-2025-05-31T16:31:48.376+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-31T16:31:48.376+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-31T16:31:48.378+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-05-31T16:31:48.399+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-31T16:31:48.399+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 295 ms
-2025-05-31T16:31:48.424+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-31T16:31:48.428+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-31T16:31:48.434+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-31T16:31:48.435+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2025-05-31T16:31:48.445+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27fc2a8c
-2025-05-31T16:31:48.445+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2025-05-31T16:31:48.446+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-31T16:31:48.446+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-05-31T16:31:48.446+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-31T16:31:48.530+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-31T16:31:48.558+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:31:48.664+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-31T16:31:48.668+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: b5d92e23-27bd-4f37-b98b-782241dbf734
+Using generated security password: dcf83231-3c89-428a-aaef-5a206bb442ef
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2025-05-31T16:31:48.669+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-05-31T16:31:48.758+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-05-31T16:31:48.765+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-31T16:31:48.769+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Started DigitalSupplyChainTrackerApplication in 0.689 seconds (process running for 83.407)
-2025-05-31T16:31:48.770+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-05-31T16:31:59.432+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-05-31T16:31:59.433+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-31T16:31:59.437+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-31T16:31:59.439+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:31:59.439+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
-2025-05-31T16:31:59.441+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
-2025-05-31T16:31:59.514+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Starting DigitalSupplyChainTrackerApplication using Java 23.0.1 with PID 34904 (C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker\target\classes started by Rajesh in C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker)
-2025-05-31T16:31:59.514+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : No active profile set, falling back to 1 default profile: "default"
-2025-05-31T16:31:59.688+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-31T16:31:59.723+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 5 JPA repository interfaces.
-2025-05-31T16:31:59.788+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-31T16:31:59.789+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-31T16:31:59.789+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-05-31T16:31:59.806+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-31T16:31:59.806+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 291 ms
-2025-05-31T16:31:59.825+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-31T16:31:59.828+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-31T16:31:59.833+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-31T16:31:59.834+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
-2025-05-31T16:31:59.844+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a43f3be
-2025-05-31T16:31:59.844+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
-2025-05-31T16:31:59.845+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-31T16:31:59.845+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-05-31T16:31:59.845+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-31T16:31:59.915+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-31T16:31:59.944+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:32:00.038+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-31T16:32:00.041+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 07986ce0-c74c-436c-9d08-b18e7f9a5929
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-05-31T16:32:00.042+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-05-31T16:32:00.109+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-05-31T16:32:00.114+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-31T16:32:00.115+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Started DigitalSupplyChainTrackerApplication in 0.621 seconds (process running for 94.753)
-2025-05-31T16:32:00.116+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-05-31T16:32:13.853+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-05-31T16:32:13.854+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-31T16:32:13.857+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-31T16:32:13.859+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:32:13.860+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
-2025-05-31T16:32:13.863+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
-2025-05-31T16:32:13.939+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Starting DigitalSupplyChainTrackerApplication using Java 23.0.1 with PID 34904 (C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker\target\classes started by Rajesh in C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker)
-2025-05-31T16:32:13.939+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : No active profile set, falling back to 1 default profile: "default"
-2025-05-31T16:32:14.113+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-31T16:32:14.144+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 5 JPA repository interfaces.
-2025-05-31T16:32:14.203+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-31T16:32:14.204+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-31T16:32:14.204+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-05-31T16:32:14.220+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-31T16:32:14.221+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 281 ms
-2025-05-31T16:32:14.240+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-31T16:32:14.242+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-31T16:32:14.248+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-31T16:32:14.248+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
-2025-05-31T16:32:14.257+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@36897740
-2025-05-31T16:32:14.257+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
-2025-05-31T16:32:14.257+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-31T16:32:14.257+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-05-31T16:32:14.258+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-31T16:32:14.318+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-31T16:32:14.345+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:32:14.432+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-31T16:32:14.435+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: c5f279ac-dee2-415b-a900-c0da6fc16fd2
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-05-31T16:32:14.435+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-05-31T16:32:14.495+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-05-31T16:32:14.500+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-31T16:32:14.502+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Started DigitalSupplyChainTrackerApplication in 0.584 seconds (process running for 109.14)
-2025-05-31T16:32:14.503+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-05-31T16:33:23.855+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-05-31T16:33:23.856+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-19] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-31T16:33:23.860+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-31T16:33:23.861+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:33:23.861+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
-2025-05-31T16:33:23.864+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
-2025-05-31T16:33:23.936+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Starting DigitalSupplyChainTrackerApplication using Java 23.0.1 with PID 34904 (C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker\target\classes started by Rajesh in C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker)
-2025-05-31T16:33:23.936+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : No active profile set, falling back to 1 default profile: "default"
-2025-05-31T16:33:24.110+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-31T16:33:24.130+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
-2025-05-31T16:33:24.180+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-31T16:33:24.181+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-31T16:33:24.181+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-05-31T16:33:24.199+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-31T16:33:24.200+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 263 ms
-2025-05-31T16:33:24.216+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-31T16:33:24.218+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-31T16:33:24.226+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-31T16:33:24.227+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
-2025-05-31T16:33:24.235+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@464b73ee
-2025-05-31T16:33:24.235+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
-2025-05-31T16:33:24.236+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-31T16:33:24.236+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-05-31T16:33:24.236+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-31T16:33:24.291+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-31T16:33:24.319+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:33:24.401+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-31T16:33:24.404+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 12d3a541-5aa5-4922-84eb-0ecebec11533
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-05-31T16:33:24.405+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-05-31T16:33:24.462+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-05-31T16:33:24.467+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-31T16:33:24.469+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Started DigitalSupplyChainTrackerApplication in 0.55 seconds (process running for 179.107)
-2025-05-31T16:33:24.469+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-05-31T16:34:33.835+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-05-31T16:34:33.837+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-23] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-31T16:34:33.841+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-31T16:34:33.842+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:34:33.842+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
-2025-05-31T16:34:33.844+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
-2025-05-31T16:34:33.922+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Starting DigitalSupplyChainTrackerApplication using Java 23.0.1 with PID 34904 (C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker\target\classes started by Rajesh in C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker)
-2025-05-31T16:34:33.922+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : No active profile set, falling back to 1 default profile: "default"
-2025-05-31T16:34:34.098+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-31T16:34:34.123+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 5 JPA repository interfaces.
-2025-05-31T16:34:34.199+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-31T16:34:34.200+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-31T16:34:34.200+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-05-31T16:34:34.222+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-31T16:34:34.222+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 299 ms
-2025-05-31T16:34:34.241+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-31T16:34:34.244+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-31T16:34:34.250+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-31T16:34:34.251+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
-2025-05-31T16:34:34.261+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@17c8a153
-2025-05-31T16:34:34.261+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
-2025-05-31T16:34:34.261+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-31T16:34:34.261+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-05-31T16:34:34.262+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-31T16:34:34.328+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-31T16:34:34.358+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:34:34.460+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-31T16:34:34.464+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 634dc029-e494-48b7-8fd6-3633cbab43ba
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-05-31T16:34:34.465+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-05-31T16:34:34.528+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-05-31T16:34:34.534+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-31T16:34:34.537+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Started DigitalSupplyChainTrackerApplication in 0.635 seconds (process running for 249.174)
-2025-05-31T16:34:34.537+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-05-31T16:35:24.020+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-05-31T16:35:24.020+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-27] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-31T16:35:24.024+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-31T16:35:24.025+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:35:24.025+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
-2025-05-31T16:35:24.026+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
-2025-05-31T16:35:24.109+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Starting DigitalSupplyChainTrackerApplication using Java 23.0.1 with PID 34904 (C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker\target\classes started by Rajesh in C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker)
-2025-05-31T16:35:24.111+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : No active profile set, falling back to 1 default profile: "default"
-2025-05-31T16:35:24.276+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-31T16:35:24.297+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 5 JPA repository interfaces.
-2025-05-31T16:35:24.371+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-31T16:35:24.372+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-31T16:35:24.372+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-05-31T16:35:24.390+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-31T16:35:24.390+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 278 ms
-2025-05-31T16:35:24.408+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-31T16:35:24.411+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-31T16:35:24.416+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-31T16:35:24.417+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
-2025-05-31T16:35:24.425+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@556f31aa
-2025-05-31T16:35:24.425+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
-2025-05-31T16:35:24.426+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-31T16:35:24.426+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-05-31T16:35:24.426+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-31T16:35:24.486+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-31T16:35:24.515+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:35:24.615+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-31T16:35:24.619+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 56563684-d323-4893-b1c0-086f385e3d83
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-05-31T16:35:24.619+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-05-31T16:35:24.700+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-05-31T16:35:24.709+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-31T16:35:24.710+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Started DigitalSupplyChainTrackerApplication in 0.621 seconds (process running for 299.348)
-2025-05-31T16:35:24.710+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-05-31T16:37:37.078+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 1 deletion, 1 modification)
-2025-05-31T16:37:37.079+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-31] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-31T16:37:37.083+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-31T16:37:37.084+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:37:37.085+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
-2025-05-31T16:37:37.086+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
-2025-05-31T16:37:37.163+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Starting DigitalSupplyChainTrackerApplication using Java 23.0.1 with PID 34904 (C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker\target\classes started by Rajesh in C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker)
-2025-05-31T16:37:37.163+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : No active profile set, falling back to 1 default profile: "default"
-2025-05-31T16:37:37.306+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-31T16:37:37.326+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
-2025-05-31T16:37:37.385+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-31T16:37:37.385+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-31T16:37:37.385+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-05-31T16:37:37.402+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-31T16:37:37.402+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 238 ms
-2025-05-31T16:37:37.424+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-31T16:37:37.426+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-31T16:37:37.431+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-31T16:37:37.431+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
-2025-05-31T16:37:37.440+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71c109f8
-2025-05-31T16:37:37.440+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
-2025-05-31T16:37:37.440+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-31T16:37:37.440+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-05-31T16:37:37.440+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-9)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-31T16:37:37.494+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-31T16:37:37.513+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:37:37.597+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-31T16:37:37.599+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: cd03b99e-90e5-492e-ae0b-36db0082ad3c
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-05-31T16:37:37.600+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-05-31T16:37:37.649+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-05-31T16:37:37.656+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-31T16:37:37.658+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Started DigitalSupplyChainTrackerApplication in 0.513 seconds (process running for 432.295)
-2025-05-31T16:37:37.658+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-05-31T16:37:39.086+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2025-05-31T16:37:39.088+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-35] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-31T16:37:39.091+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-31T16:37:39.091+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-35] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:37:39.092+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
-2025-05-31T16:37:39.093+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
-2025-05-31T16:37:39.166+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Starting DigitalSupplyChainTrackerApplication using Java 23.0.1 with PID 34904 (C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker\target\classes started by Rajesh in C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker)
-2025-05-31T16:37:39.166+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : No active profile set, falling back to 1 default profile: "default"
-2025-05-31T16:37:39.298+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-31T16:37:39.319+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 5 JPA repository interfaces.
-2025-05-31T16:37:39.386+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-31T16:37:39.388+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-31T16:37:39.388+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-05-31T16:37:39.403+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-31T16:37:39.404+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 238 ms
-2025-05-31T16:37:39.419+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-31T16:37:39.421+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-31T16:37:39.427+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-31T16:37:39.428+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
-2025-05-31T16:37:39.435+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fa315a4
-2025-05-31T16:37:39.436+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
-2025-05-31T16:37:39.436+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-31T16:37:39.436+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-05-31T16:37:39.436+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-10)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-31T16:37:39.500+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-31T16:37:39.531+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:37:39.622+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-31T16:37:39.625+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 5cd8ac37-c30b-47ee-87bd-0bf4e54f98b1
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-05-31T16:37:39.625+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-05-31T16:37:39.682+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-05-31T16:37:39.688+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-31T16:37:39.689+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Started DigitalSupplyChainTrackerApplication in 0.541 seconds (process running for 434.327)
-2025-05-31T16:37:39.690+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-05-31T16:41:38.352+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-05-31T16:41:38.353+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-39] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-31T16:41:38.356+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-31T16:41:38.357+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-39] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:41:38.357+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
-2025-05-31T16:41:38.358+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
-2025-05-31T16:41:38.415+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Starting DigitalSupplyChainTrackerApplication using Java 23.0.1 with PID 34904 (C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker\target\classes started by Rajesh in C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker)
-2025-05-31T16:41:38.417+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : No active profile set, falling back to 1 default profile: "default"
-2025-05-31T16:41:38.564+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-31T16:41:38.587+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 5 JPA repository interfaces.
-2025-05-31T16:41:38.644+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-31T16:41:38.644+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-31T16:41:38.644+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-05-31T16:41:38.665+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-31T16:41:38.665+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 247 ms
-2025-05-31T16:41:38.690+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-31T16:41:38.692+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-31T16:41:38.698+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-31T16:41:38.698+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
-2025-05-31T16:41:38.706+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a1f1306
-2025-05-31T16:41:38.706+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
-2025-05-31T16:41:38.706+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-31T16:41:38.706+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-05-31T16:41:38.708+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-11)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-31T16:41:38.770+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-31T16:41:38.798+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:41:38.884+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-31T16:41:38.888+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: e9367676-d06b-4a61-9261-75b525861971
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-05-31T16:41:38.888+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-05-31T16:41:38.954+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-05-31T16:41:38.962+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-31T16:41:38.964+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Started DigitalSupplyChainTrackerApplication in 0.563 seconds (process running for 673.601)
-2025-05-31T16:41:38.965+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-05-31T16:42:20.334+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-05-31T16:42:20.335+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-43] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-31T16:42:20.338+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-31T16:42:20.339+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-43] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:42:20.341+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
-2025-05-31T16:42:20.342+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
-2025-05-31T16:42:20.403+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Starting DigitalSupplyChainTrackerApplication using Java 23.0.1 with PID 34904 (C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker\target\classes started by Rajesh in C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker)
-2025-05-31T16:42:20.404+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : No active profile set, falling back to 1 default profile: "default"
-2025-05-31T16:42:20.578+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-31T16:42:20.600+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 5 JPA repository interfaces.
-2025-05-31T16:42:20.659+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-31T16:42:20.660+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-31T16:42:20.660+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-05-31T16:42:20.688+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-31T16:42:20.689+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 284 ms
-2025-05-31T16:42:20.706+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-31T16:42:20.708+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-31T16:42:20.714+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-31T16:42:20.714+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
-2025-05-31T16:42:20.722+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50f94861
-2025-05-31T16:42:20.722+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
-2025-05-31T16:42:20.723+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-31T16:42:20.723+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-05-31T16:42:20.723+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-12)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-31T16:42:20.776+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-31T16:42:20.796+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:42:20.884+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-31T16:42:20.888+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 6eefd92a-b6b2-47bb-a2f7-544ce1606f1b
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-05-31T16:42:20.889+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-05-31T16:42:20.970+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-05-31T16:42:20.977+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-31T16:42:20.979+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Started DigitalSupplyChainTrackerApplication in 0.595 seconds (process running for 715.618)
-2025-05-31T16:42:20.981+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-05-31T16:43:05.405+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-05-31T16:43:05.406+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-47] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-31T16:43:05.410+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-31T16:43:05.411+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-47] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:43:05.411+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
-2025-05-31T16:43:05.412+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
-2025-05-31T16:43:05.484+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Starting DigitalSupplyChainTrackerApplication using Java 23.0.1 with PID 34904 (C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker\target\classes started by Rajesh in C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker)
-2025-05-31T16:43:05.484+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : No active profile set, falling back to 1 default profile: "default"
-2025-05-31T16:43:05.662+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-31T16:43:05.685+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 5 JPA repository interfaces.
-2025-05-31T16:43:05.761+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-31T16:43:05.761+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-31T16:43:05.761+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-05-31T16:43:05.784+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-31T16:43:05.785+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 299 ms
-2025-05-31T16:43:05.817+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-31T16:43:05.820+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-31T16:43:05.827+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-31T16:43:05.828+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
-2025-05-31T16:43:05.835+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection com.mysql.cj.jdbc.ConnectionImpl@47502a6a
-2025-05-31T16:43:05.836+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
-2025-05-31T16:43:05.836+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-31T16:43:05.836+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-05-31T16:43:05.837+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-13)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-31T16:43:05.886+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-31T16:43:05.907+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:43:05.999+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-31T16:43:06.002+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 3921618c-6523-402f-87e1-6156916167df
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-05-31T16:43:06.003+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-05-31T16:43:06.083+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-05-31T16:43:06.089+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-31T16:43:06.091+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Started DigitalSupplyChainTrackerApplication in 0.629 seconds (process running for 760.729)
-2025-05-31T16:43:06.093+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-05-31T16:43:15.713+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-05-31T16:43:15.713+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-51] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-31T16:43:15.717+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-31T16:43:15.717+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-51] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:43:15.718+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
-2025-05-31T16:43:15.720+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
-2025-05-31T16:43:15.777+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Starting DigitalSupplyChainTrackerApplication using Java 23.0.1 with PID 34904 (C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker\target\classes started by Rajesh in C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker)
-2025-05-31T16:43:15.777+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : No active profile set, falling back to 1 default profile: "default"
-2025-05-31T16:43:15.916+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-31T16:43:15.934+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
-2025-05-31T16:43:15.980+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-31T16:43:15.981+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-31T16:43:15.981+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-05-31T16:43:16.002+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-31T16:43:16.002+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 223 ms
-2025-05-31T16:43:16.018+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-31T16:43:16.020+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-31T16:43:16.024+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-31T16:43:16.025+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
-2025-05-31T16:43:16.032+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50458992
-2025-05-31T16:43:16.032+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
-2025-05-31T16:43:16.032+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-31T16:43:16.032+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-05-31T16:43:16.032+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-14)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-31T16:43:16.078+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-31T16:43:16.096+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:43:16.159+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-31T16:43:16.161+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: e8f51b36-cbd4-4999-8d4a-ad9ae51a7dc5
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-05-31T16:43:16.162+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-05-31T16:43:16.214+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-05-31T16:43:16.219+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-31T16:43:16.221+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Started DigitalSupplyChainTrackerApplication in 0.459 seconds (process running for 770.859)
-2025-05-31T16:43:16.222+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-05-31T16:43:31.991+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-05-31T16:43:31.992+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-55] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-31T16:43:31.995+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-31T16:43:31.996+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-55] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:43:31.996+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
-2025-05-31T16:43:31.998+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
-2025-05-31T16:43:32.056+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Starting DigitalSupplyChainTrackerApplication using Java 23.0.1 with PID 34904 (C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker\target\classes started by Rajesh in C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker)
-2025-05-31T16:43:32.056+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : No active profile set, falling back to 1 default profile: "default"
-2025-05-31T16:43:32.195+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-31T16:43:32.217+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 5 JPA repository interfaces.
-2025-05-31T16:43:32.290+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-31T16:43:32.290+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-31T16:43:32.291+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-05-31T16:43:32.314+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-31T16:43:32.316+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 259 ms
-2025-05-31T16:43:32.349+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-31T16:43:32.351+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-31T16:43:32.356+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-31T16:43:32.358+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
-2025-05-31T16:43:32.365+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a093586
-2025-05-31T16:43:32.366+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
-2025-05-31T16:43:32.366+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-31T16:43:32.366+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-05-31T16:43:32.366+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-15)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-31T16:43:32.432+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-31T16:43:32.463+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:43:32.553+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-31T16:43:32.556+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: ddc84c7c-efa1-4416-b5f2-82c67d320d11
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-05-31T16:43:32.558+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-05-31T16:43:32.636+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-05-31T16:43:32.642+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-31T16:43:32.644+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Started DigitalSupplyChainTrackerApplication in 0.603 seconds (process running for 787.281)
-2025-05-31T16:43:32.645+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-05-31T16:43:50.468+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-05-31T16:43:50.468+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-59] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-31T16:43:50.471+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-31T16:43:50.473+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-59] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:43:50.473+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
-2025-05-31T16:43:50.474+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
-2025-05-31T16:43:50.533+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Starting DigitalSupplyChainTrackerApplication using Java 23.0.1 with PID 34904 (C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker\target\classes started by Rajesh in C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker)
-2025-05-31T16:43:50.533+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : No active profile set, falling back to 1 default profile: "default"
-2025-05-31T16:43:50.674+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-31T16:43:50.694+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
-2025-05-31T16:43:50.753+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-31T16:43:50.754+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-31T16:43:50.754+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-05-31T16:43:50.779+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-31T16:43:50.780+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 246 ms
-2025-05-31T16:43:50.798+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-31T16:43:50.799+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-31T16:43:50.804+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-31T16:43:50.804+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
-2025-05-31T16:43:50.812+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-16 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31196582
-2025-05-31T16:43:50.812+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
-2025-05-31T16:43:50.812+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-31T16:43:50.812+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-05-31T16:43:50.812+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-16)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-31T16:43:50.865+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-31T16:43:50.890+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:43:50.954+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-31T16:43:50.956+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 35364752-da43-4a9c-9be2-9c41ae407605
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-05-31T16:43:50.958+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-05-31T16:43:51.003+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-05-31T16:43:51.008+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-31T16:43:51.010+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Started DigitalSupplyChainTrackerApplication in 0.494 seconds (process running for 805.647)
-2025-05-31T16:43:51.010+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-05-31T16:44:02.670+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-05-31T16:44:02.671+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-63] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-31T16:44:02.673+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-31T16:44:02.674+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-63] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:44:02.675+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-63] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
-2025-05-31T16:44:02.676+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [Thread-63] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
-2025-05-31T16:44:02.745+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Starting DigitalSupplyChainTrackerApplication using Java 23.0.1 with PID 34904 (C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker\target\classes started by Rajesh in C:\Users\Rajesh\Desktop\BridgeLabz\sts_projects\cg_simulation\DigitalSupplyChainTracker)
-2025-05-31T16:44:02.745+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : No active profile set, falling back to 1 default profile: "default"
-2025-05-31T16:44:02.890+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-31T16:44:02.906+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 5 JPA repository interfaces.
-2025-05-31T16:44:02.955+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-05-31T16:44:02.956+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-31T16:44:02.956+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2025-05-31T16:44:02.978+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-31T16:44:02.978+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 231 ms
-2025-05-31T16:44:02.997+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-31T16:44:02.998+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-31T16:44:03.004+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-31T16:44:03.005+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Starting...
-2025-05-31T16:44:03.014+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-17 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53f39d62
-2025-05-31T16:44:03.014+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Start completed.
-2025-05-31T16:44:03.014+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-31T16:44:03.014+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-05-31T16:44:03.014+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-17)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-05-31T16:44:03.065+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-31T16:44:03.083+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T16:44:03.162+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-31T16:44:03.166+05:30  WARN 34904 --- [DigitalSupplyChainTracker] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: e0d0d929-a629-49d3-a192-6e3ea8d1826b
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2025-05-31T16:44:03.167+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-2025-05-31T16:44:03.223+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-05-31T16:44:03.228+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-05-31T16:44:03.230+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Started DigitalSupplyChainTrackerApplication in 0.503 seconds (process running for 817.868)
-2025-05-31T16:44:03.231+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2025-05-31T17:05:35.508+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-31T17:05:35.512+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-31T17:05:35.513+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-31T17:05:35.513+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown initiated...
-2025-05-31T17:05:35.514+05:30  INFO 34904 --- [DigitalSupplyChainTracker] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown completed.
+2025-06-01T19:45:47.631+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-06-01T19:45:48.258+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-06-01T19:45:48.290+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-01T19:45:48.299+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [restartedMain] c.s.DigitalSupplyChainTrackerApplication : Started DigitalSupplyChainTrackerApplication in 5.471 seconds (process running for 5.976)
+2025-06-01T19:46:21.596+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-01T19:46:21.596+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-01T19:46:21.597+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-01T19:46:22.174+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 337 ms
+2025-06-01T19:46:47.642+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-10] c.s.controller.UserController            : Fetching all users
+2025-06-01T19:46:47.745+05:30  WARN 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.supplytracker.exception.UserNotFoundException: User with this email is not found]
+2025-06-01T19:46:58.225+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-1] c.s.controller.UserController            : Fetching all users
+2025-06-01T19:46:58.235+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-1] c.supplytracker.service.Imp.UserService  : Fetching all users from the database.
+2025-06-01T19:47:22.734+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-5] c.s.controller.UserController            : Fetching user by ID
+2025-06-01T19:47:22.738+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-5] c.supplytracker.service.Imp.UserService  : Fetching user by ID: 3
+2025-06-01T19:47:22.746+05:30 ERROR 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-5] c.supplytracker.service.Imp.UserService  : User with Id 3 not found
+2025-06-01T19:47:22.749+05:30  WARN 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.supplytracker.exception.UserNotFoundException: The user with this id: 3 not found]
+2025-06-01T19:47:38.044+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-7] c.s.controller.UserController            : Fetching user by ID
+2025-06-01T19:47:38.047+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-7] c.supplytracker.service.Imp.UserService  : Fetching user by ID: 16
+2025-06-01T19:48:13.918+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-8] c.s.controller.ReportController          : Request received for delivery performance report
+2025-06-01T19:48:13.919+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-8] c.s.controller.ReportController          : Authorizing user role for report access
+2025-06-01T19:48:13.923+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-8] c.s.controller.ReportController          : User authorized for report access
+2025-06-01T19:48:13.923+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-8] c.s.service.Imp.ReportService            : Fetching delivery performance data
+2025-06-01T19:48:13.939+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-8] c.s.service.Imp.ReportService            : Generated delivery performance report with 6 entries
+2025-06-01T19:48:32.408+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-9] c.s.controller.ReportController          : Fetching delayed shipments report
+2025-06-01T19:48:32.409+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-9] c.s.service.Imp.ReportService            : Fetching delayed shipments
+2025-06-01T19:48:32.437+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-9] c.s.service.Imp.ReportService            : Found 3 delayed shipments
+2025-06-01T19:52:06.610+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-1] c.s.controller.UserController            : Updating user role
+2025-06-01T19:52:06.613+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-1] c.supplytracker.service.Imp.UserService  : Updating user with Id: 9
+2025-06-01T19:52:06.645+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-1] c.supplytracker.service.Imp.UserService  : User with Id: 9 updated successfully
+2025-06-01T19:52:19.861+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-6] c.s.controller.UserController            : Fetching user by ID
+2025-06-01T19:52:19.863+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [http-nio-8080-exec-6] c.supplytracker.service.Imp.UserService  : Fetching user by ID: 9
+2025-06-01T19:54:45.396+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-01T19:54:45.399+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-01T19:54:45.404+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-01T19:54:45.407+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-01T19:54:45.412+05:30  INFO 20308 --- [DigitalSupplyChainTracker] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

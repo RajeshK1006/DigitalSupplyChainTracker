@@ -38,14 +38,16 @@ public class AlertController {
 
     // Returns all alerts
     @GetMapping
-    public List<AlertDto> getAllAlerts() {
+    public List<AlertDto> getAllAlerts(@RequestParam String email) {
+        authorizeAdmin(email);
         logger.info("Fetching all alerts");
         return service.getAllAlerts();
     }
 
     // Returns a specific alert by its ID
     @GetMapping("/{id}")
-    public AlertDto getAlertById(@PathVariable Long id) {
+    public AlertDto getAlertById(@PathVariable Long id, @RequestParam String email) {
+        authorizeAdmin(email);
         logger.info("Fetching alert by ID");
         return service.getAlertbyId(id);
     }

@@ -43,4 +43,36 @@ public class GlobalExceptionHandler {
 		return new ResponseEntity<>(error,HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 
+	@ExceptionHandler(AlertNotFoundException.class)
+	public ResponseEntity<ErrorResponse> handleAlertNotFoundExceptions(Exception e){
+		ErrorResponse error = new ErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR.value(),
+				"Internal Server Error: "+ e.getMessage(), LocalDateTime.now());
+
+		return new ResponseEntity<>(error,HttpStatus.INTERNAL_SERVER_ERROR);
+	}
+
+	@ExceptionHandler(CheckPointNotFoundException.class)
+	public ResponseEntity<ErrorResponse> handleCheckPointNotFoundExceptions(Exception e){
+		ErrorResponse error = new ErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR.value(),
+				"Internal Server Error: "+ e.getMessage(), LocalDateTime.now());
+
+		return new ResponseEntity<>(error,HttpStatus.INTERNAL_SERVER_ERROR);
+	}
+
+	@ExceptionHandler(ShipmentNotFoundException.class)
+	public ResponseEntity<ErrorResponse> handleShipmentNotFoundExceptions(Exception e){
+		ErrorResponse error = new ErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR.value(),
+				"Internal Server Error: "+ e.getMessage(), LocalDateTime.now());
+
+		return new ResponseEntity<>(error,HttpStatus.INTERNAL_SERVER_ERROR);
+	}
+
+	@ExceptionHandler(ShipmentNotFoundException.class)
+	public ResponseEntity<ErrorResponse> handleResourceNotFoundExceptions(Exception e){
+		ErrorResponse error = new ErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR.value(),
+				"Internal Server Error: "+ e.getMessage(), LocalDateTime.now());
+
+		return new ResponseEntity<>(error,HttpStatus.INTERNAL_SERVER_ERROR);
+	}
+
 }
