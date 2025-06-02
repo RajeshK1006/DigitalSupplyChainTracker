@@ -36,7 +36,7 @@ public class GlobalExceptionHandler {
 	}
 
 	@ExceptionHandler(InvalidRoleException.class)
-	public ResponseEntity<ErrorResponse> handleInvalidRoleExceptions(Exception e){
+	public ResponseEntity<ErrorResponse> handleInvalidRoleExceptions(InvalidRoleException e){
 		ErrorResponse error = new ErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR.value(),
 				"Internal Server Error: "+ e.getMessage(), LocalDateTime.now());
 
@@ -44,7 +44,7 @@ public class GlobalExceptionHandler {
 	}
 
 	@ExceptionHandler(AlertNotFoundException.class)
-	public ResponseEntity<ErrorResponse> handleAlertNotFoundExceptions(Exception e){
+	public ResponseEntity<ErrorResponse> handleAlertNotFoundExceptions(AlertNotFoundException e){
 		ErrorResponse error = new ErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR.value(),
 				"Internal Server Error: "+ e.getMessage(), LocalDateTime.now());
 
@@ -52,7 +52,7 @@ public class GlobalExceptionHandler {
 	}
 
 	@ExceptionHandler(CheckPointNotFoundException.class)
-	public ResponseEntity<ErrorResponse> handleCheckPointNotFoundExceptions(Exception e){
+	public ResponseEntity<ErrorResponse> handleCheckPointNotFoundExceptions(CheckPointNotFoundException e){
 		ErrorResponse error = new ErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR.value(),
 				"Internal Server Error: "+ e.getMessage(), LocalDateTime.now());
 
@@ -60,15 +60,15 @@ public class GlobalExceptionHandler {
 	}
 
 	@ExceptionHandler(ShipmentNotFoundException.class)
-	public ResponseEntity<ErrorResponse> handleShipmentNotFoundExceptions(Exception e){
+	public ResponseEntity<ErrorResponse> handleShipmentNotFoundExceptions(ShipmentNotFoundException e){
 		ErrorResponse error = new ErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR.value(),
 				"Internal Server Error: "+ e.getMessage(), LocalDateTime.now());
 
 		return new ResponseEntity<>(error,HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 
-	@ExceptionHandler(ShipmentNotFoundException.class)
-	public ResponseEntity<ErrorResponse> handleResourceNotFoundExceptions(Exception e){
+	@ExceptionHandler(ResourceNotFoundException.class)
+	public ResponseEntity<ErrorResponse> handleResourceNotFoundExceptions(ResourceNotFoundException e){
 		ErrorResponse error = new ErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR.value(),
 				"Internal Server Error: "+ e.getMessage(), LocalDateTime.now());
 

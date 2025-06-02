@@ -12,7 +12,6 @@ import com.supplytracker.dto.ReportDeliveryPerformanceDto;
 import com.supplytracker.entity.CheckpointLog;
 import com.supplytracker.entity.Shipment;
 import com.supplytracker.repository.CheckpointLogRepository;
-import com.supplytracker.repository.ItemRepository;
 import com.supplytracker.repository.ShipmentRepository;
 import com.supplytracker.service.interfaces.ReportServiceInterface;
 
@@ -29,9 +28,6 @@ public class ReportService implements ReportServiceInterface {
 
 	@Autowired
 	private CheckpointLogRepository checkrepo;
-
-	@Autowired
-	private ItemRepository itemrepo;
 
 	@Autowired
 	private ModelMapper mapper;
